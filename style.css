@@ -1,0 +1,170 @@
+/*  Generelle indstillinger  */
+
+* {
+    background-color: #EBEBEB;
+}
+
+
+/*  Font indstillinger  */
+
+h1 {
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+p {
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* header indstillinger */
+
+header img {
+    width: 20%;
+    height: auto;
+}
+
+/**** 41 MM WATCHES  ****/
+
+.templateModtager {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+/**** 37 MM WATCHES  ****/
+
+.templateModtager2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+/**** WATCH STRAPS  ****/
+
+.templateModtager3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+/**** WATCH ROLLS  ****/
+
+.templateModtager4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+/**** COFFEE TABLE BOOKS  ****/
+
+.templateModtager5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+.billede {
+    max-width: 85%;
+    height: auto;
+
+}
+
+.shop {
+    padding: 10px;
+    text-align: center;
+
+}
+
+/**** MEDIA 41 MM WATCHES  ****/
+
+@media screen and (max-width:700px) {
+    .templateModtager {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .templateModtager {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/**** MEDIA 37 MM WATCHES  ****/
+
+@media screen and (max-width:700px) {
+    .templateModtager2 {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .templateModtager2 {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/**** MEDIA WATCH STRAPS ****/
+
+@media screen and (max-width:700px) {
+    .templateModtager3 {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .templateModtager3 {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/**** MEDIA WATCH ROLLS ****/
+
+@media screen and (max-width:700px) {
+    .templateModtager4 {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .templateModtager4 {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/**** MEDIA COFFE TABLE BOOKS ****/
+
+@media screen and (max-width:700px) {
+    .templateModtager5 {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .templateModtager5 {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
