@@ -16,24 +16,24 @@ body {
 /**** MENU INDSTILLINGER ****/
 
 nav {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    position: absolute;
+    top: 40px;
+    left: 45%;
+    position: fixed;
     z-index: 2;
     text-align: center;
-
 }
 
 nav a {
     text-decoration: none;
     color: black;
     font-family: "Futura condensed", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
 }
 
 nav a:hover {
-    color: #eee234;
+    color: #CC8E3B;
 }
 
 
@@ -58,6 +58,7 @@ header img {
     width: 20%;
     height: auto;
     position: absolute;
+    padding: 10px;
     z-index: 2;
 
 }
@@ -73,11 +74,12 @@ header p {
 /**** BG VIDEO ****/
 
 #myVideo {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     width: 100%;
     height: auto;
+
 }
 
 /**** SLIDESHOW ABOUT ****/
