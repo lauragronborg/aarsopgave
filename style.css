@@ -1,11 +1,43 @@
-/*  Generelle indstillinger  */
+/****  Generelle indstillinger  ****/
 
-* {
-    background-color: #EBEBEB;
+body {
+    background-color: #ebebeb;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    -webkit-filter: grayscale(20%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
 }
 
 
-/*  Font indstillinger  */
+/**** MENU INDSTILLINGER ****/
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #eee234;
+}
+
+
+/****  Font indstillinger  ****/
 
 h1 {
     font-family: "Futura condensed", sans-serif;
@@ -20,14 +52,81 @@ p {
     font-size: 15px;
 }
 
-/* header indstillinger */
+/**** header indstillinger ****/
 
 header img {
     width: 20%;
     height: auto;
+    position: absolute;
+    z-index: 2;
+
+}
+
+header p {
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+
+}
+
+/**** BG VIDEO ****/
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+/**** SLIDESHOW ABOUT ****/
+
+.slider {
+    width: 412px;
+    height: auto;
+    margin: 2em auto;
+
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+}
+
+.slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+    opacity: 1;
 }
 
 /**** 41 MM WATCHES  ****/
+
+.column {
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: double;
+}
+
+.sectionwrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
 
 .templateModtager {
     display: grid;
@@ -35,6 +134,7 @@ header img {
     max-width: 1024px;
     margin: 0 auto;
     grid-gap: 10px;
+
 }
 
 /**** 37 MM WATCHES  ****/
@@ -90,6 +190,20 @@ header img {
 }
 
 /**** MEDIA 41 MM WATCHES  ****/
+
+@media screen and (max-width:700px) {
+    .sectionwrapper {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sectionwrapper {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 @media screen and (max-width:700px) {
     .templateModtager {
@@ -167,4 +281,41 @@ header img {
         max-width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+/**** FOOTER ****/
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 35px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+
+.footerLinks a {
+    color: black;
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
 }
