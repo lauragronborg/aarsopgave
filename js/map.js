@@ -28,6 +28,7 @@ function visAbout() {
     })
 }
 
+
 function initMap() {
 
     //koordinater for kortets centrum
