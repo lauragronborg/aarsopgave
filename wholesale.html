@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larsen & Eriksen</title>
     <link type="text/css" href="style.css" rel="stylesheet">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
 
+        img {
+            -webkit-filter: grayscale(20%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(20%);
+        }
+    </style>
 </head>
 
 <body>
@@ -19,12 +30,7 @@
         <a href="about.html">ABOUT</a>
         <a href="shop.html">SHOP</a>
     </nav>
-    <h1>AUTHORIZED RESELLERS</h1>
-    <p>OUR DESIGNS ARE TO BE FOUND AT THE FOLLOWING AUTHORIZED (AND REALLY AWESOME) RESELLERS AROUND THE WORLD:</p>
-    <div id="map"></div>
-    <script src="js/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYNyUa1SOfumvCssgeUUAPHi5Uq7ZvYJ8&callback=initMap">
-    </script>
+
 
     <footer>
         <div class="footerLinks">

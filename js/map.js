@@ -1,3 +1,33 @@
+//vis template i DOM
+
+document.addEventListener("DOMContentLoaded", hentJson);
+
+let about;
+let minTemplate = document.querySelector("#myTemplate");
+
+//hent json
+async function hentJson() {
+    let jsonObjekt = await fetch("http://augustabondo.dk/aarsopgave/wordpress/wp-json/wp/v2/posts/104");
+    //vis objekt som json
+    about = await jsonObjekt.json();
+    visAbout();
+}
+//lav klon af template
+
+function visAbout() {
+    //console.log(observationer);
+    //kør json array´et igennem og lav en klon af template
+    about.forEach(ur => {
+        let klon = minTemplate.cloneNode(true).content;
+        klon.querySelector("[data-titel]").innerHTML = ur.title.rendered;
+        klon.querySelector("[data-tekst]").innerHTML = ur.content.rendered;
+        klon.querySelector("[data-billede]").src = ur.acf.billede.url;
+
+
+        document.querySelector(".templateModtager").appendChild(klon);
+    })
+}
+
 function initMap() {
 
     //koordinater for kortets centrum
@@ -83,6 +113,11 @@ function initMap() {
         lat: 55.6855734,
         lng: 12.537200999999982
     };
+    //AUSTRALIEN
+    let HARDTOFIND = {
+        lat: -33.9108041,
+        lng: 151.1957777
+    };
 
     //BELGIEN
 
@@ -92,7 +127,6 @@ function initMap() {
     };
 
     // CANADA
-
     let EPHAPPAREL = {
         lat: 49.8905158,
         lng: -97.14072069999997
@@ -101,7 +135,32 @@ function initMap() {
         lat: 51.0436323,
         lng: -114.07986549999998
     };
+
+    // TJEKKIET
+
+    let ZOOT = {
+        lat: 49.22118589999999,
+        lng: 16.5960503
+    };
+
+    // KINA
+
+    let SECOO = {
+        lat: 36.665007,
+        lng: 117.02706599999999
+    };
+
+    //FINLAND
+    let IVALO = {
+        lat: 61.92410999999999,
+        lng: 25.748151099999973
+    };
+
     // HOLLAND
+    let FRESHCOTTON = {
+        lat: 52.3615021,
+        lng: 4.9012694000000465
+    };
     let THEGOODPEOPLE = {
         lat: 51.923383,
         lng: 4.488093899999967
@@ -114,11 +173,34 @@ function initMap() {
         lat: 52.3688839,
         lng: 4.885768399999961
     };
+
+    //RUMÆNIEN
+    let ZOOTRO = {
+        lat: 45.943161,
+        lng: 24.966760000000022
+    };
+
+    //SLOVAKIET
+    let ZOOTSK = {
+        lat: 48.669026,
+        lng: 19.69902400000001
+    };
+
     //SPANIEN
     let TEQUILASUNSET = {
         lat: 41.6547021,
         lng: -0.8787270000000262
     };
+    //ENGLAND
+    let THEPOMMIER = {
+        lat: 51.514691,
+        lng: -0.1259099999999762
+    };
+    let WOLFBADGERUK = {
+        lat: 51.5265618,
+        lng: -0.08008380000001125
+    };
+
     //USA
     let BLACKMARKET = {
         lat: 34.0400233,
@@ -140,12 +222,11 @@ function initMap() {
         lat: 33.5305437,
         lng: -117.77304670000001
     };
+
     let WOLFBADGER = {
         lat: 40.7214047,
         lng: -74.00198710000001
     };
-
-
 
     // opretter et kort
     let map = new google.maps.Map(document.querySelector('#map'), {
@@ -292,6 +373,46 @@ function initMap() {
     });
     let marker33 = new google.maps.Marker({
         position: WOLFBADGER,
+        map: map
+    });
+    let marker34 = new google.maps.Marker({
+        position: HARDTOFIND,
+        map: map
+    });
+    let marker35 = new google.maps.Marker({
+        position: ZOOT,
+        map: map
+    });
+    let marker36 = new google.maps.Marker({
+        position: SECOO,
+        map: map
+    });
+    let marker37 = new google.maps.Marker({
+        position: IVALO,
+        map: map
+    });
+    let marker38 = new google.maps.Marker({
+        position: IVALO,
+        map: map
+    });
+    let marker39 = new google.maps.Marker({
+        position: FRESHCOTTON,
+        map: map
+    });
+    let marker40 = new google.maps.Marker({
+        position: ZOOTRO,
+        map: map
+    });
+    let marker41 = new google.maps.Marker({
+        position: ZOOTSK,
+        map: map
+    });
+    let marker42 = new google.maps.Marker({
+        position: THEPOMMIER,
+        map: map
+    });
+    let marker43 = new google.maps.Marker({
+        position: WOLFBADGERUK,
         map: map
     });
 }

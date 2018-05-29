@@ -17,10 +17,9 @@ body {
 
 nav {
     top: 40px;
-    left: 45%;
     position: fixed;
     z-index: 2;
-    text-align: center;
+    left: 40%;
 }
 
 nav a {
@@ -30,6 +29,7 @@ nav a {
     font-weight: 800;
     font-size: 20px;
     padding: 10px;
+
 }
 
 nav a:hover {
@@ -54,21 +54,20 @@ p {
 
 /**** header indstillinger ****/
 
-header img {
-    width: 20%;
-    height: auto;
-    position: absolute;
-    padding: 10px;
-    z-index: 2;
-
-}
-
 header p {
     font-family: "Futura condensed", sans-serif;
     font-weight: 100;
     font-size: 10px;
     text-align: center;
 
+}
+
+#logo {
+    width: 4%;
+    height: auto;
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 20px;
 }
 
 /**** BG VIDEO ****/
@@ -117,7 +116,6 @@ header p {
     font-family: "Futura condensed", sans-serif;
     font-weight: 100;
     font-size: 10px;
-    text-align: center;
     margin-top: 50px;
     border-bottom: double;
 }
