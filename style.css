@@ -71,6 +71,14 @@ header p {
     padding-left: 20px;
 }
 
+#LE_logo {
+    width: 10%;
+    height: auto;
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
 /**** BG VIDEO ****/
 
 #myVideo {
