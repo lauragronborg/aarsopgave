@@ -17,6 +17,13 @@ body {
 /**** MENU INDSTILLINGER ****/
 
 nav {
+    top: 20px;
+    position: fixed;
+    z-index: 2;
+    left: 40%;
+}
+
+.navshop {
     top: 40px;
     position: fixed;
     z-index: 2;
@@ -25,7 +32,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: orange;
     font-family: "Futura condensed", sans-serif;
     font-weight: 800;
     font-size: 20px;
