@@ -49,6 +49,14 @@ h1 {
 
 }
 
+h2 {
+    font-family: "Futura condensed", sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    padding-top: 20px;
+
+}
+
 p {
     font-family: "Lato", sans-serif;
     font-weight: 150;
@@ -149,6 +157,21 @@ header p {
     margin: 0 auto;
     grid-gap: 10px;
 
+}
+
+/**** TERMS ****/
+
+.column_terms {
+    font-weight: 100;
+    font-size: 10px;
+    margin-top: 50px;
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.column_terms h1 {
+    padding-top: 30px;
 }
 
 /**** 37 MM WATCHES  ****/
