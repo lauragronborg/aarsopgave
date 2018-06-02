@@ -382,99 +382,120 @@ header p {
     }
 }
 
-
-
-
-
-
-/**** KONTAKT ****/
-
-#kontakt {
-    max-width: 1024px;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    padding-bottom: 30px;
-}
-
-#kontakt .top {
-    text-align: center;
-    padding: 20px 20px;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-
-input[type=text],
-select,
-textarea {
-    width: 70%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* margin */
-    display: block;
-    margin: 6px auto 16px auto;
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+@media screen and (max-width:650px) {
+    #myVideo {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
 }
 
 
-/* Style the submit button with a specific background color etc */
-
-input[type=submit] {
-    background-color: #1f1c2e;
-    /*** husk at ændre farve her ****/
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    display: block;
-    margin: auto;
-}
+@media screen and (max-width:650px) {
+    #LE_logo {
+        width: 20%;
+        height: auto;
+        position: fixed;
+        padding-top: 40px;
+        padding-left: 20px;
+        z-index: 1
+    }
 
 
-/* When moving the mouse over the submit button, add a darker color */
-
-input[type=submit]:hover {
-    background-color: #1f1c2e;
-}
-
-/**** FOOTER ****/
-
-footer {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-}
-
-footer img {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 35px;
-}
-
-footer p {
-    font-size: 12px;
-}
 
 
-footer img:hover {
-    transform: scale(1.1);
-}
 
 
-.footerLinks a {
-    color: black;
-    font-family: "Futura condensed", sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-}
+
+
+
+
+    /**** KONTAKT ****/
+    #kontakt {
+        max-width: 1024px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    #kontakt .top {
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text],
+    select,
+    textarea {
+        width: 70%;
+        /* Full width */
+        padding: 12px;
+        /* Some padding */
+        border: 1px solid #ccc;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* margin */
+        display: block;
+        margin: 6px auto 16px auto;
+        resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: #1f1c2e;
+        /*** husk at ændre farve her ****/
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+    }
+
+
+    /* When moving the mouse over the submit button, add a darker color */
+    input[type=submit]:hover {
+        background-color: #1f1c2e;
+    }
+
+    /**** FOOTER ****/
+    footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer img {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 35px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+
+    .footerLinks a {
+        color: black;
+        font-family: "Futura condensed", sans-serif;
+        font-weight: 100;
+        font-size: 12px;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+    }
