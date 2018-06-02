@@ -12,11 +12,19 @@
     <header>
         <a href="home.html"><img id="logo" src="Billeder/LARSEN%20&%20ERIKSEN%20-%20Danish%20Design%20Watches%20-%20www.larseneriksen.com%20-%20Logo%20(Bicycle).png" alt="Larsen & Eriksen logo"></a>
     </header>
-    <nav data-menu>
-        <a href="home.html">HOME</a>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">HOME</a>
         <a href="shop.html">SHOP</a>
         <a href="about.html">ABOUT</a>
-    </nav>
+        <a class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+        <!-- w3schools, LINK: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+
+
+    </div>
 
     <section id="kontakt">
 
@@ -53,6 +61,7 @@
             </div>
         </div>
     </section>
+    <script src="js/menu.js"></script>
     <footer>
         <div class="footerLinks">
             <a href="resellers.html">AUTHORIZED RESELLERS</a>
