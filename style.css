@@ -380,6 +380,18 @@ header p {
     }
 }
 
+@media screen and (max-width:650px) {
+    .templateModtager5 {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
 /**** KONTAKT ****/
 
 #kontakt {
